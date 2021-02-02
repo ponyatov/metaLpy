@@ -28,8 +28,10 @@ M += core/primitive/__init__.py
 M += core/active/__init__.py
 M += core/container/__init__.py
 M += core/meta/__init__.py
+T += test/test_metaL.py test/core/test_Object.py
+T += test/serialize/test_json.py
 P += bully.py
-S += $(M) $(P)
+S += $(M) $(T) $(P)
 # / <section:src>
 # \ <section:all>
 .PHONY: all
@@ -38,8 +40,12 @@ all: $(PY) bully.py
 
 .PHONY: pep
 pep: $(PEP)
-$(PEP): $(P) $(Z) $(M)
+$(PEP): $(S)
 	$(PEP) --ignore=E26,E302,E401,E402 --in-place $? && touch $@
+
+.PHONY: test
+test: $(PYT)
+	PYTHONPATH=$(CWD) $< $@
 # / <section:all>
 # \ <section:doc>
 .PHONY: doxy

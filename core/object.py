@@ -18,11 +18,12 @@ class Object:
         ## nest[]ed elements / **ordered container**
         self.nest = []
 
-    ## @name IDump
+    ## @name ITest
 
-    ## **pytest callback**: remove hashes, id(self)
-
+    ## **pytest callback**: remove hashes, id(self) from full tree dumps
     def test(self): return self.dump(test=True)
+
+    ## @name IDump text dump for debug purposes
 
     ## **print callback**
     def __repr__(self): return self.dump()
@@ -53,13 +54,13 @@ class Object:
         suffix = '' if test else f' @{id(self):x}'
         return f'{prefix}<{self.tag()}:{self.val()}>{suffix}'
 
-    ## dump type (constant/reflection)
+    ## dump `<T:` type (constant/reflection)
     def tag(self): return self.type
 
-    ## dump value (as string)
+    ## dump `:V>` value (as string)
     def val(self): return f'{self.value}'
 
-    ## @name IOperator
+    ## @name IOperator operator redefinition & base operations over object graphs
 
     ## `if A`
     def __bool__(self): return bool(self.nest)
@@ -100,3 +101,35 @@ class Object:
     def __rshift__(self, that):
         assert isinstance(that, Object)
         return self.__setitem__(that.value, that)
+
+    ## `A // B` push subgraph into nest[]ed as a stack
+    def __floordiv__(self, that):
+        assert isinstance(that, Object)
+        self.nest.append(that)
+        return self
+
+    ## `A.push(B)`
+    def push(self, that): return self // that
+
+    ## `A.pop`
+    def pop(self): return self.nest.pop()
+
+    ## iterator over nest[]ed
+    def __iter__(self):
+        for j in self.nest:
+            yield j
+
+    ## @name ISerialize multiformat (de)serialization for persistence & message passing
+
+    def json(self, depth=0):
+        ret = '{'
+        ret += f'"tag":"{self.tag()}","val":"{self.val()}"'
+        ret += '}'
+        return ret
+
+    ## @name ICompiler code generation & source-to-source compilation
+
+    ## @name IWeb generation for the web interface
+
+    def html(self, request, depth=0):
+        raise NotImplementedError(self.__class__, 'html', self)

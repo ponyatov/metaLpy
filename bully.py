@@ -3,4 +3,4 @@
 from metaL import *
 
 hello = Object('hello') // Object('world')
-print(hello)
+print(hello.json())
