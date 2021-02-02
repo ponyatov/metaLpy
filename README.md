@@ -1,9 +1,11 @@
 #  `metaL/py`
-## dynamic language & interactive programming system
+## dynamic language & graph database
 
 (c) Dmitry Ponyatov <dponyatov@gmail.com> 2020 MIT
 
 * homoiconic interpreter engine
+* in-memory object graph database
+* interactive programming system
 
 github: https://github.com/ponyatov/metaLpy
 

@@ -1,0 +1,14 @@
+*~
+*.swp
+*.log
+# \ <section:mid>
+*.pyc
+/bin
+/lib
+/lib64
+/share
+/__pycache__
+/pyvenv.cfg
+# / <section:mid>
+!.gitignore
+/docs/
