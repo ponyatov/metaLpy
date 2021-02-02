@@ -10,3 +10,5 @@
 github: https://github.com/ponyatov/metaLpy
 
 manual: https://ponyatov.github.io/metaLpy/index.html
+
+metaL/doc: https://github.com/ponyatov/metaLdoc
