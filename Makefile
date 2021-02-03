@@ -141,6 +141,7 @@ main:
 	git checkout $@
 	git pull -v
 	git checkout shadow -- $(MERGE)
+	make doxy
 .PHONY: shadow
 shadow:
 	git push -v
