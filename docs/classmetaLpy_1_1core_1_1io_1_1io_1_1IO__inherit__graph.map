@@ -1,0 +1,14 @@
+<map id="metaLpy.core.io.io.IO" name="metaLpy.core.io.io.IO">
+<area shape="rect" id="node3" href="$classmetaLpy_1_1core_1_1io_1_1dir_1_1Dir.html" title="directory as container " alt="" coords="441,5,595,32"/>
+<area shape="rect" id="node4" href="$classmetaLpy_1_1core_1_1io_1_1file_1_1File.html" title="file as container " alt="" coords="437,56,599,83"/>
+<area shape="rect" id="node7" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1Net.html" title="metaLpy.core.io.net.Net" alt="" coords="437,107,599,133"/>
+<area shape="rect" id="node13" href="$classmetaLpy_1_1core_1_1io_1_1path_1_1Path.html" title="file/dir as OS path (points directly with slashes) " alt="" coords="431,157,605,184"/>
+<area shape="rect" id="node2" href="$classmetaLpy_1_1core_1_1object_1_1Object.html" title="base graph node class / generic code=data &amp; knowledge representation (AST/ASG) " alt="" coords="5,81,188,108"/>
+<area shape="rect" id="node5" href="$classmetaLpy_1_1gen_1_1js_1_1jsFile.html" title="metaLpy.gen.js.jsFile" alt="" coords="675,5,821,32"/>
+<area shape="rect" id="node6" href="$classmetaLpy_1_1web_1_1html_1_1htmlFile.html" title="metaLpy.web.html.htmlFile" alt="" coords="659,56,837,83"/>
+<area shape="rect" id="node8" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1IP.html" title="IP address. " alt="" coords="671,107,825,133"/>
+<area shape="rect" id="node9" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1Port.html" title="IP port. " alt="" coords="665,157,831,184"/>
+<area shape="rect" id="node10" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1Protocol.html" title="network protocol " alt="" coords="653,208,843,235"/>
+<area shape="rect" id="node11" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1TCP.html" title="TCP/IP. " alt="" coords="892,183,1060,209"/>
+<area shape="rect" id="node12" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1UDP.html" title="UDP/IP. " alt="" coords="891,233,1061,260"/>
+</map>

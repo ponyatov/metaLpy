@@ -1,0 +1,9 @@
+<map id="metaLpy.core.io.net.Net" name="metaLpy.core.io.net.Net">
+<area shape="rect" id="node4" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1IP.html" title="IP address. " alt="" coords="5,229,160,256"/>
+<area shape="rect" id="node5" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1Port.html" title="IP port. " alt="" coords="184,229,349,256"/>
+<area shape="rect" id="node6" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1Protocol.html" title="network protocol " alt="" coords="373,229,563,256"/>
+<area shape="rect" id="node2" href="$classmetaLpy_1_1core_1_1io_1_1io_1_1IO.html" title="metaLpy.core.io.io.IO" alt="" coords="193,80,340,107"/>
+<area shape="rect" id="node3" href="$classmetaLpy_1_1core_1_1object_1_1Object.html" title="base graph node class / generic code=data &amp; knowledge representation (AST/ASG) " alt="" coords="175,5,358,32"/>
+<area shape="rect" id="node7" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1TCP.html" title="TCP/IP. " alt="" coords="287,304,455,331"/>
+<area shape="rect" id="node8" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1UDP.html" title="UDP/IP. " alt="" coords="479,304,649,331"/>
+</map>

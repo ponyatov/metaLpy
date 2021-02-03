@@ -31,20 +31,21 @@
         "**/__pycache__/**": true,
         "**/bin/**": true, "**/include/**": true, "**/lib*/**": true,
         "**/share/**": true, "**/*.pyc": true, "**/pyvenv.cfg": true,
-        "**/.lsp": true, "**/.pytest_cache": true,
-        "**/metaL/**": true,
-        "**/docs/**": true,
+        "**/.pytest_cache": true,
     /* / <section:watcher> */
+        "**/docs/**": true,
+        "**/static/jquery.js": true, "**/static/socket.io.*": true,
 },
 "files.exclude": {
     /* \ <section:exclude> */
         "**/__pycache__/**": true,
         "**/bin/**": true, "**/include/**": true, "**/lib*/**": true,
         "**/share/**": true, "**/*.pyc": true, "**/pyvenv.cfg": true,
-        "**/.lsp": true, "**/.pytest_cache": true,
+        "**/.pytest_cache": true,
+    /* / <section:exclude> */
         "**/metaL/**": true,
         "**/docs/**": true,
-    /* / <section:exclude> */
+        "**/static/jquery.js": true, "**/static/socket.io.*": true,
 },
 "files.associations": {
     /* \ <section:assoc> */

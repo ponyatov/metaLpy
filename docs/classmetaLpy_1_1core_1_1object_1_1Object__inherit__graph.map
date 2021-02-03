@@ -1,0 +1,32 @@
+<map id="metaLpy.core.object.Object" name="metaLpy.core.object.Object">
+<area shape="rect" id="node2" href="$classmetaLpy_1_1core_1_1active_1_1active_1_1Active.html" title="executable data element " alt="" coords="254,49,437,90"/>
+<area shape="rect" id="node6" href="$classmetaLpy_1_1core_1_1container_1_1container_1_1Container.html" title="data container " alt="" coords="236,275,455,317"/>
+<area shape="rect" id="node7" href="$classmetaLpy_1_1core_1_1env_1_1Env.html" title="environment (binds variable names to its values) " alt="" coords="269,341,422,368"/>
+<area shape="rect" id="node8" href="$classmetaLpy_1_1core_1_1io_1_1io_1_1IO.html" title="metaLpy.core.io.io.IO" alt="" coords="544,367,691,393"/>
+<area shape="rect" id="node20" href="$classmetaLpy_1_1core_1_1meta_1_1meta_1_1Meta.html" title="metaLpy.core.meta.meta.Meta" alt="" coords="245,173,445,200"/>
+<area shape="rect" id="node24" href="$classmetaLpy_1_1core_1_1primitive_1_1primitive_1_1Primitive.html" title="metaLpy.core.primitive.primitive.\lPrimitive" alt="" coords="240,455,451,497"/>
+<area shape="rect" id="node31" href="$classmetaLpy_1_1web_1_1web_1_1Web.html" title="metaLpy.web.web.Web" alt="" coords="266,224,425,251"/>
+<area shape="rect" id="node3" href="$classmetaLpy_1_1core_1_1active_1_1fn_1_1Fn.html" title="function " alt="" coords="530,5,705,32"/>
+<area shape="rect" id="node5" href="$classmetaLpy_1_1core_1_1active_1_1vm_1_1VM.html" title="Virtual Machine. " alt="" coords="524,56,711,83"/>
+<area shape="rect" id="node4" href="$classmetaLpy_1_1core_1_1meta_1_1method_1_1Method.html" title="metaLpy.core.meta.method.\lMethod" alt="" coords="788,163,973,205"/>
+<area shape="rect" id="node9" href="$classmetaLpy_1_1core_1_1io_1_1dir_1_1Dir.html" title="directory as container " alt="" coords="803,420,958,447"/>
+<area shape="rect" id="node10" href="$classmetaLpy_1_1core_1_1io_1_1file_1_1File.html" title="file as container " alt="" coords="800,319,961,345"/>
+<area shape="rect" id="node13" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1Net.html" title="metaLpy.core.io.net.Net" alt="" coords="799,369,962,396"/>
+<area shape="rect" id="node19" href="$classmetaLpy_1_1core_1_1io_1_1path_1_1Path.html" title="file/dir as OS path (points directly with slashes) " alt="" coords="793,473,968,500"/>
+<area shape="rect" id="node11" href="$classmetaLpy_1_1gen_1_1js_1_1jsFile.html" title="metaLpy.gen.js.jsFile" alt="" coords="1059,268,1206,295"/>
+<area shape="rect" id="node12" href="$classmetaLpy_1_1web_1_1html_1_1htmlFile.html" title="metaLpy.web.html.htmlFile" alt="" coords="1043,319,1222,345"/>
+<area shape="rect" id="node14" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1IP.html" title="IP address. " alt="" coords="1055,369,1210,396"/>
+<area shape="rect" id="node15" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1Port.html" title="IP port. " alt="" coords="1050,476,1215,503"/>
+<area shape="rect" id="node16" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1Protocol.html" title="network protocol " alt="" coords="1038,420,1227,447"/>
+<area shape="rect" id="node17" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1TCP.html" title="TCP/IP. " alt="" coords="1285,395,1453,421"/>
+<area shape="rect" id="node18" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1UDP.html" title="UDP/IP. " alt="" coords="1284,445,1455,472"/>
+<area shape="rect" id="node21" href="$classmetaLpy_1_1core_1_1meta_1_1clazz_1_1Class.html" title="metaLpy.core.meta.clazz.\lClass" alt="" coords="531,107,704,149"/>
+<area shape="rect" id="node22" href="$classmetaLpy_1_1core_1_1meta_1_1module_1_1Module.html" title="metaLpy.core.meta.module.\lModule" alt="" coords="525,225,709,266"/>
+<area shape="rect" id="node23" href="$classmetaLpy_1_1web_1_1flask_1_1App.html" title="web application " alt="" coords="801,235,960,261"/>
+<area shape="rect" id="node25" href="$classmetaLpy_1_1core_1_1primitive_1_1name_1_1Name.html" title="variable/object name " alt="" coords="503,417,732,444"/>
+<area shape="rect" id="node26" href="$classmetaLpy_1_1core_1_1primitive_1_1number_1_1Number.html" title="floating point number " alt="" coords="515,534,720,575"/>
+<area shape="rect" id="node30" href="$classmetaLpy_1_1core_1_1primitive_1_1string_1_1String.html" title="text string " alt="" coords="520,469,715,510"/>
+<area shape="rect" id="node27" href="$classmetaLpy_1_1core_1_1primitive_1_1integer_1_1Integer.html" title="integer number " alt="" coords="780,531,981,573"/>
+<area shape="rect" id="node28" href="$classmetaLpy_1_1core_1_1primitive_1_1bin_1_1Bin.html" title="bit string " alt="" coords="1033,536,1232,563"/>
+<area shape="rect" id="node29" href="$classmetaLpy_1_1core_1_1primitive_1_1hex_1_1Hex.html" title="machine hexadecimal number " alt="" coords="1029,587,1236,613"/>
+</map>

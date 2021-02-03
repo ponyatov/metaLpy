@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['dump',['dump',['../classmetaLpy_1_1core_1_1object_1_1Object.html#af376e40985b213e8db8a2662a19527a1',1,'metaLpy::core::object::Object']]]
+  ['bin',['Bin',['../classmetaLpy_1_1core_1_1primitive_1_1bin_1_1Bin.html',1,'metaLpy::core::primitive::bin']]],
+  ['bin_2epy',['bin.py',['../bin_8py.html',1,'']]]
 ];

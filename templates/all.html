@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <title>{{app.title()}}</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/static/bootstrap.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+            <script src="/static/html5shiv.js"></script>
+            <script src="/static/respond.js"></script>
+        <![endif]-->
+        <link rel="shortcut icon" href="/static/logo.png" type="image/png">
+        <link href="/static/css.css" rel="stylesheet">
+        {% block head %}{% endblock %}
+    </head>
+    <style>
+        {% block style %}{% endblock %}
+    </style>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-default">
+                <a href="/dump/app">
+                    <img class="navbar-logo" src="/static/logo.png">
+                </a>
+            </nav>
+        </div>
+        {% block body %}{% endblock %}
+    </body>
+</html>
+{% block script %}{% endblock %}

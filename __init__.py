@@ -5,5 +5,7 @@
 ## * in-memory object graph database
 ## * interactive programming system
 
-
 from .core import *
+from .geo import *
+from .gui import *
+from .web import *

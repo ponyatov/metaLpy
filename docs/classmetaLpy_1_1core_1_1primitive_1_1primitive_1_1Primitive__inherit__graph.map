@@ -1,0 +1,11 @@
+<map id="metaLpy.core.primitive.primitive.Primitive" name="metaLpy.core.primitive.primitive.Primitive">
+<area shape="rect" id="node3" href="$classmetaLpy_1_1core_1_1primitive_1_1name_1_1Name.html" title="variable/object name " alt="" coords="495,5,724,32"/>
+<area shape="rect" id="node4" href="$classmetaLpy_1_1core_1_1primitive_1_1number_1_1Number.html" title="floating point number " alt="" coords="507,57,712,98"/>
+<area shape="rect" id="node9" href="$classmetaLpy_1_1core_1_1primitive_1_1string_1_1String.html" title="text string " alt="" coords="512,122,707,163"/>
+<area shape="rect" id="node2" href="$classmetaLpy_1_1core_1_1object_1_1Object.html" title="base graph node class / generic code=data &amp; knowledge representation (AST/ASG) " alt="" coords="5,64,188,91"/>
+<area shape="rect" id="node5" href="$classmetaLpy_1_1core_1_1primitive_1_1integer_1_1Integer.html" title="integer number " alt="" coords="772,57,973,98"/>
+<area shape="rect" id="node6" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1Port.html" title="IP port. " alt="" coords="1042,13,1207,40"/>
+<area shape="rect" id="node7" href="$classmetaLpy_1_1core_1_1primitive_1_1bin_1_1Bin.html" title="bit string " alt="" coords="1025,64,1224,91"/>
+<area shape="rect" id="node8" href="$classmetaLpy_1_1core_1_1primitive_1_1hex_1_1Hex.html" title="machine hexadecimal number " alt="" coords="1021,115,1228,141"/>
+<area shape="rect" id="node10" href="$classmetaLpy_1_1core_1_1io_1_1path_1_1Path.html" title="file/dir as OS path (points directly with slashes) " alt="" coords="785,129,960,156"/>
+</map>

@@ -2,5 +2,6 @@
 
 from metaL import *
 
-hello = Object('hello') // Object('world')
-print(hello.json())
+app = App(File(__file__))
+
+app.run()

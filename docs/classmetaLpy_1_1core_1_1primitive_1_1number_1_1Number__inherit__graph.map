@@ -1,0 +1,8 @@
+<map id="metaLpy.core.primitive.number.Number" name="metaLpy.core.primitive.number.Number">
+<area shape="rect" id="node4" href="$classmetaLpy_1_1core_1_1primitive_1_1integer_1_1Integer.html" title="integer number " alt="" coords="748,49,949,90"/>
+<area shape="rect" id="node2" href="$classmetaLpy_1_1core_1_1primitive_1_1primitive_1_1Primitive.html" title="metaLpy.core.primitive.primitive.\lPrimitive" alt="" coords="236,49,447,90"/>
+<area shape="rect" id="node3" href="$classmetaLpy_1_1core_1_1object_1_1Object.html" title="base graph node class / generic code=data &amp; knowledge representation (AST/ASG) " alt="" coords="5,56,188,83"/>
+<area shape="rect" id="node5" href="$classmetaLpy_1_1core_1_1io_1_1net_1_1Port.html" title="IP port. " alt="" coords="1018,5,1183,32"/>
+<area shape="rect" id="node6" href="$classmetaLpy_1_1core_1_1primitive_1_1bin_1_1Bin.html" title="bit string " alt="" coords="1001,56,1200,83"/>
+<area shape="rect" id="node7" href="$classmetaLpy_1_1core_1_1primitive_1_1hex_1_1Hex.html" title="machine hexadecimal number " alt="" coords="997,107,1204,133"/>
+</map>

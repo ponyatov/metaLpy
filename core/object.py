@@ -19,8 +19,10 @@ class Object:
         self.nest = []
 
     ## @name ITest
+    ## @ingroup test
 
-    ## **pytest callback**: remove hashes, id(self) from full tree dumps
+    ## **pytest callback**: full tree dump for tests (without hashes/id/..)
+    ## @ingroup test
     def test(self): return self.dump(test=True)
 
     ## @name IDump text dump for debug purposes
@@ -29,25 +31,33 @@ class Object:
     def __repr__(self): return self.dump()
 
     ## **full** text tree **dump**
+    ## @param[in] cycle recursion block
+    ## @param[in] depth recursion depth
+    ## @param[in] prefix before `<T:V>` header /optional/
+    ## @param[in] test use dump in tests (disable hashes/id/..)
     def dump(self, cycle=[], depth=0, prefix='', test=False):
+        # head
         ret = self.pad(depth) + self.head(prefix, test)
-        # block cycles
-        if not depth:
+        # cycle
+        if not depth: # init
             cycle = []
         if self in cycle:
             return ret + ' _/'
         else:
-            cycle.append(self)
+            cycle += [self]
         # slot{}
         for i in sorted(self.slot.keys()):
             ret += self.slot[i].dump(cycle, depth + 1, f'{i} = ', test)
+        # nest[]
         for j, k in enumerate(iter(self)):
             ret += k.dump(cycle, depth + 1, f'{j} : ', test)
         return ret
 
     ## tree padding
-    def pad(self, depth):
-        return '\n' + '\t' * depth
+    ## @param[in] depth tree depth = number of tabs
+    ## @param[in] what to pad /optional/
+    def pad(self, depth, what=''):
+        return '\n' + '\t' * depth + f'{what}'
 
     ## **short** `<T:V>` header-only **dump**
     def head(self, prefix='', test=False):
@@ -120,16 +130,67 @@ class Object:
             yield j
 
     ## @name ISerialize multiformat (de)serialization for persistence & message passing
+    ## @ingroup ser
 
-    def json(self, depth=0):
-        ret = '{'
-        ret += f'"tag":"{self.tag()}","val":"{self.val()}"'
-        ret += '}'
+    ## @ingroup ser
+    ## @param[in] cycle recursion block
+    ## @param[in] depth recursion depth
+    ## @param[in] minify minification (else tabbed .json)
+    def json(self, cycle=[], depth=0, minify=True):
+        #
+        assert self not in cycle
+        #
+        if minify:
+            d0 = d1 = d2 = ''
+        else:
+            d0 = f'{self.pad(depth+0)}'
+            d1 = f'{self.pad(depth+1)}'
+            d2 = f'{self.pad(depth+2)}'
+        # <head>
+        ret = f'{d0}{{'
+        ret += f'{d1}"tag":"{self.tag()}"'
+        ret += f',{d1}"val":"{self.val()}"'
+        # slot{}
+        assert self.keys() == []
+        # nest[]
+        if self.nest:
+            ret += f',{d1}"nest":['
+            ret += ','.join(
+                map(lambda j: j.json(cycle + [self], depth + 2, minify),
+                    self.nest))
+            ret += f'{d1}]'
+        ret += f'{d0}}}'
         return ret
 
     ## @name ICompiler code generation & source-to-source compilation
 
     ## @name IWeb generation for the web interface
+    ## @ingroup web
 
+    ## represent as Socket.IO message
+    ## @ingroup web
+    ## @param[in] request web server request context
+    ## @param[in] depth recursion depth
+    def sio(self, request, depth=0):
+        raise NotImplementedError(self.__class__, 'sio', self)
+
+    ## represent as html code
+    ## @ingroup web
+    ## @param[in] request web server request context
+    ## @param[in] depth recursion depth
     def html(self, request, depth=0):
         raise NotImplementedError(self.__class__, 'html', self)
+
+    ## ajax/http GET
+    ## @ingroup web
+    ## @param[in] request web server request context
+    ## @param[in] depth recursion depth
+    def get(self, request, depth=0):
+        raise NotImplementedError(self.__class__, 'get', self)
+
+    ## ajax/http POST
+    ## @ingroup web
+    ## @param[in] request web server request context
+    ## @param[in] depth recursion depth
+    def post(self, request, depth=0):
+        raise NotImplementedError(self.__class__, 'post', self)

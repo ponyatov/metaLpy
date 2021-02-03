@@ -1,1 +1,5 @@
+jquery.js
+socket.io.*
+bootstrap.*
+vue.*
 !.gitignore
