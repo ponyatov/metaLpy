@@ -1,0 +1,7 @@
+#localtime   { color: white; }
+.online      { background: #0F02; }
+.offline     { background: #F005; }
+
+@media print {
+
+}

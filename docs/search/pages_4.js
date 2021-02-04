@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['why_3f',['Why?',['../md_doc_why.html',1,'']]],
-  ['wiki_27s_20_26_20old_20materials',['Wiki&apos;s &amp; old materials',['../md_doc_wiki.html',1,'']]]
+  ['metal_20manifest',['metaL manifest',['../md_doc_manifest.html',1,'']]],
+  ['metaprogramming',['Metaprogramming',['../md_doc_metaprogramming.html',1,'']]],
+  ['making_20metal_20installable_20via_20pip_20install_20_2d_2dgithub',['Making metaL installable via pip install --github',['../md_doc_pypi.html',1,'']]]
 ];

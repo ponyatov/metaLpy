@@ -10,6 +10,7 @@ from core.env import *
 from core.io import Dir
 from .web import Web
 from core.meta import Module
+from core.time import *
 from gen.js import jsFile
 from gen.s import S
 from web.html import htmlFile
@@ -17,6 +18,7 @@ from web.html import htmlFile
 import os, re
 
 import flask
+from flask_socketio import SocketIO, emit
 
 env['static'] = Dir('static')
 env['templates'] = Dir('templates')
@@ -40,10 +42,21 @@ class App(Web, Module):
         self['html'] = htmlFile(self)
         self.templates // self['html']
         #
+        self.flask = flask
         self.app = flask.Flask(self.value)
         self.app.config['SECRET_KEY'] = config.SECRET_KEY
         self.watch()
         self.router()
+        #
+        self.sio = SocketIO(self.app)
+        self.socketio()
+
+    ## configure SocketIO event processors
+    def socketio(self):
+        @self.sio.on('connect')
+        def connect(): self.sio.emit('localtime', LocalTime().json())
+        @self.sio.on('localtime')
+        def localtime(): self.sio.emit('localtime', LocalTime().json())
 
     ## put application name in page/window title
     def title(self): return self.head(test=True)
@@ -84,11 +97,12 @@ class App(Web, Module):
         @self.app.route(f'/{self.value}')
         @self.app.route('/app')
         def app():
-            return flask.render_template(f'{self.value}/{self.value}.html', env=env, app=self)
+            return flask.render_template(f'{self.value}/index.html', env=env, app=self)
 
     ## run application as web backend
 
     def run(self):
         print(env)
-        self.app.run(host=config.HOST, port=config.PORT, debug=True,
+        self.sio.run(self.app,
+                     host=config.HOST, port=config.PORT, debug=True,
                      extra_files=self.extra_files)

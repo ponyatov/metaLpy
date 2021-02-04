@@ -1,4 +1,5 @@
 
 from core import *
 
-class IO(Object): pass
+class IO(Object):
+    pass

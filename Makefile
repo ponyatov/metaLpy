@@ -22,7 +22,7 @@ PEP          = $(BIN)/autopep8
 PYT          = $(BIN)/pytest
 # / <section:tool>
 # \ <section:src>
-M += __init__.py
+M += __init__.py setup.py
 
 M += core/__init__.py core/object.py core/env.py
 
@@ -42,6 +42,8 @@ M += core/meta/__init__.py
 M += core/meta/__init__.py core/meta/meta.py
 M += core/meta/module.py
 M += core/meta/clazz.py core/meta/method.py
+
+M += core/time/__init__.py core/time/time.py core/time/date.py
 
 T += test/test_metaL.py test/core/test_Object.py
 T += test/serialize/test_json.py
@@ -91,7 +93,7 @@ install: $(OS)_install js
 .PHONY: update
 update: $(OS)_update
 	$(PIP)  install -U pip autopep8
-	$(PIP)  install -U -r requirements.pip
+	$(PIP)  install -U -r requirements.txt
 .PHONY: Linux_install Linux_update
 Linux_install Linux_update:
 	sudo apt update
@@ -105,35 +107,35 @@ $(PYT):
 # / <section:install/py>
 # \ <section:install/js>
 .PHONY: js
-js: static/jquery.js static/socket.io.js \
-	static/bootstrap.css static/bootstrap.js \
-	static/vue.cjs.js
+js: static/js/jquery.js static/js/socket.io.js \
+	static/js/bootstrap.css static/js/bootstrap.js \
+	static/js/vue.cjs.js
 
 JQUERY_VER = 3.5.1
 JQUERY_JS  = https://code.jquery.com/jquery-$(JQUERY_VER).js
-static/jquery.js:
+static/js/jquery.js:
 	$(WGET) -O $@ $(JQUERY_JS)
 
 SOCKETIO_VER = 3.1.0
-static/socket.io.js: static/socket.io.min.js.map
+static/js/socket.io.js: static/js/socket.io.min.js.map
 	$(WGET) -O $@ https://cdnjs.cloudflare.com/ajax/libs/socket.io/$(SOCKETIO_VER)/socket.io.min.js
-static/socket.io.min.js.map:	
+static/js/socket.io.min.js.map:	
 	$(WGET) -O $@ https://cdnjs.cloudflare.com/ajax/libs/socket.io/$(SOCKETIO_VER)/socket.io.min.js.map
 
 BOOTSTRAP_VER = 3.4.1
-static/bootstrap.css:
+static/js/bootstrap.css:
 	$(WGET) -O $@ https://bootswatch.com/3/darkly/bootstrap.css
-static/bootstrap.js:
+static/js/bootstrap.js:
 	$(WGET) -O $@ https://maxcdn.bootstrapcdn.com/bootstrap/$(BOOTSTRAP_VER)/js/bootstrap.js
 
 VUE_VER = 3.0.5
-static/vue.cjs.js:
+static/js/vue.cjs.js:
 	$(WGET) -O $@ https://cdnjs.cloudflare.com/ajax/libs/vue/$(VUE_VER)/vue.cjs.min.js
 # / <section:install/js>
 # / <section:install>
 # \ <section:merge>
 MERGE  = Makefile README.md .vscode $(S) doc .gitmodules doxy.gen
-MERGE += apt.txt requirements.pip
+MERGE += apt.txt requirements.txt
 MERGE += static templates geo/data
 .PHONY: main
 main:
@@ -141,12 +143,13 @@ main:
 	git checkout $@
 	git pull -v
 	git checkout shadow -- $(MERGE)
-	make doxy
+	$(MAKE) doxy
 .PHONY: shadow
 shadow:
 	git push -v
 	git checkout $@
 	git pull -v
+	$(MAKE) doxy
 .PHONY: release
 release:
 	git tag $(NOW)-$(REL)

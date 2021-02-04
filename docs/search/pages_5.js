@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['Манифест_20metal',['Манифест metaL',['../md_doc_ru_manifest.html',1,'']]]
+  ['object_20graph',['Object Graph',['../md_doc_objgraph.html',1,'']]]
 ];

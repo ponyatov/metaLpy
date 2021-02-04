@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['date_2epy',['date.py',['../date_8py.html',1,'']]],
   ['db',['db',['../group__db.html',1,'']]],
   ['dir',['Dir',['../classmetaLpy_1_1core_1_1io_1_1dir_1_1Dir.html',1,'metaLpy::core::io::dir']]],
   ['dir_2epy',['dir.py',['../dir_8py.html',1,'']]],

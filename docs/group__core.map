@@ -2,6 +2,7 @@
 <area shape="rect" id="node1" href="$group__container.html" title="data containers " alt="" coords="100,5,175,32"/>
 <area shape="rect" id="node2" href="$group__meta.html" title="metaprogramming (software components) " alt="" coords="112,56,163,83"/>
 <area shape="rect" id="node3" href="$group__active.html" title="executable objects subset " alt="" coords="109,107,166,133"/>
-<area shape="rect" id="node4" href="$group__primitive.html" title="Primitive scalar types. " alt="" coords="102,157,173,184"/>
-<area shape="rect" id="node5" href="$group__io.html" title="base Input/Output " alt="" coords="118,208,157,235"/>
+<area shape="rect" id="node4" href="$group__time.html" title="calendar and date/time " alt="" coords="114,157,161,184"/>
+<area shape="rect" id="node5" href="$group__primitive.html" title="Primitive scalar types. " alt="" coords="102,208,173,235"/>
+<area shape="rect" id="node6" href="$group__io.html" title="base Input/Output " alt="" coords="118,259,157,285"/>
 </map>

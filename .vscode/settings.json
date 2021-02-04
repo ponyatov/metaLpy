@@ -34,7 +34,7 @@
         "**/.pytest_cache": true,
     /* / <section:watcher> */
         "**/docs/**": true,
-        "**/static/jquery.js": true, "**/static/socket.io.*": true,
+        "**/static/js/**": true,
 },
 "files.exclude": {
     /* \ <section:exclude> */
@@ -45,7 +45,7 @@
     /* / <section:exclude> */
         "**/metaL/**": true,
         "**/docs/**": true,
-        "**/static/jquery.js": true, "**/static/socket.io.*": true,
+        "**/static/js/*": true,
 },
 "files.associations": {
     /* \ <section:assoc> */

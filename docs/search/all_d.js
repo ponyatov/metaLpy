@@ -2,6 +2,7 @@ var searchData=
 [
   ['metal_20manifest',['metaL manifest',['../md_doc_manifest.html',1,'']]],
   ['metaprogramming',['Metaprogramming',['../md_doc_metaprogramming.html',1,'']]],
+  ['making_20metal_20installable_20via_20pip_20install_20_2d_2dgithub',['Making metaL installable via pip install --github',['../md_doc_pypi.html',1,'']]],
   ['meta',['Meta',['../classmetaLpy_1_1core_1_1meta_1_1meta_1_1Meta.html',1,'metaLpy.core.meta.meta.Meta'],['../group__meta.html',1,'(Global Namespace)']]],
   ['meta_2epy',['meta.py',['../meta_8py.html',1,'']]],
   ['method',['Method',['../classmetaLpy_1_1core_1_1meta_1_1method_1_1Method.html',1,'metaLpy::core::meta::method']]],

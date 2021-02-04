@@ -1,0 +1,7 @@
+ply
+xxhash
+Flask
+Flask-SocketIO
+Flask-SQLAlchemy
+pyshp
+pika

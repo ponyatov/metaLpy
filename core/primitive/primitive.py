@@ -1,4 +1,5 @@
 
 from core import *
 
-class Primitive(Object): pass
+class Primitive(Object):
+    pass

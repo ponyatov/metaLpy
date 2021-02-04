@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['metal_20manifest',['metaL manifest',['../md_doc_manifest.html',1,'']]],
-  ['metaprogramming',['Metaprogramming',['../md_doc_metaprogramming.html',1,'']]]
+  ['generic_20code_20templating',['Generic Code Templating',['../md_doc_templating.html',1,'']]]
 ];

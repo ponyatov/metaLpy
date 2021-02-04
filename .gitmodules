@@ -1,3 +1,6 @@
 [submodule "doc"]
 	path = doc
 	url = git@github.com:ponyatov/metaLdoc.git
+[submodule "book"]
+	path = book
+	url = git@github.com:ponyatov/metaLbook.git
